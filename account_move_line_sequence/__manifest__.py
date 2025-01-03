@@ -1,12 +1,13 @@
-# Copyright 2023 Therp BV <https://therp.nl>
+# Copyright 2025 Therp BV <https://therp.nl>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 {
-    "name": "Junglegym Accounting customizations",
-    "version": "12.0.1.0.0",
-    "author": "Therp BV",
+    "name": "Account move line sequence",
+    "version": "16.0.1.0.0",
+    "author": "Therp BV," "Odoo Community Association (OCA)",
+    "website": "https://github.com/OCA/account-financial-tools",
     "license": "AGPL-3",
     "category": "Accounting",
-    "summary": "Accounting customizations for Junglegym",
+    "summary": "Sequence for account move lines",
     "depends": [
         "account",
     ],
