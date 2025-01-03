@@ -5,6 +5,5 @@ from odoo import fields, models
 
 class AccountMoveLine(models.Model):
     _inherit = "account.move.line"
-    _order = "sequence, date desc, name desc, id"
 
-    sequence = fields.Integer(default=16, index=True)
+    sequence = fields.Integer(default=16)

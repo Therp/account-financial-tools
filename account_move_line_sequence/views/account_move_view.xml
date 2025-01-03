@@ -7,6 +7,9 @@
             <xpath expr="//field[@name='line_ids']/tree//field[1]" position="before">
                 <field name="sequence" widget="handle" />
             </xpath>
+            <xpath expr="//field[@name='line_ids']/tree" position="attributes">
+                <attribute name="default_order">sequence</attribute>
+            </xpath>
         </field>
     </record>
 </odoo>
