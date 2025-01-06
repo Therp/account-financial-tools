@@ -4,11 +4,14 @@
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_form" />
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='line_ids']/tree//field[1]" position="before">
-                <field name="sequence" widget="handle" />
+            <xpath
+                expr="//field[@name='invoice_line_ids']/tree//field[1]"
+                position="before"
+            >
+                <field name="sequence_journal_item" widget="handle" />
             </xpath>
             <xpath expr="//field[@name='line_ids']/tree" position="attributes">
-                <attribute name="default_order">sequence</attribute>
+                <attribute name="default_order">sequence_journal_item</attribute>
             </xpath>
         </field>
     </record>

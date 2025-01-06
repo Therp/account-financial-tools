@@ -6,4 +6,4 @@ from odoo import fields, models
 class AccountMoveLine(models.Model):
     _inherit = "account.move.line"
 
-    sequence = fields.Integer(default=16)
+    sequence_journal_item = fields.Integer(default=16)
