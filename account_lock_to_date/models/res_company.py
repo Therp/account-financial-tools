@@ -215,7 +215,7 @@ class ResCompany(models.Model):
             user_lock_to_date = self.with_context(ignore_exceptions=False)[
                 user_lock_to_date_field
             ]
-            if date < user_lock_to_date
+            if date < user_lock_to_date:
                 violated_date = user_lock_to_date
         return violated_date
 
